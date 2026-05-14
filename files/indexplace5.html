@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            overflow: hidden;
+            background: black;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -100px;
+
+            background:
+
+                radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.7), transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(111, 111, 111, 0.7), transparent 40%),
+                radial-gradient(circle at 80% 20%, rgb(207, 155, 77), transparent 40%);
+
+            background-size: 200% 200%;
+
+            filter: blur(60px);
+
+            animation: liquidMove 10s ease infinite alternate;
+
+            z-index: -1;
+        }
+
+        @keyframes liquidMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 50% 100%;
+            }
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .main2 {
+
+            top: 70px;
+            position: relative;
+            background-color: black;
+            border-radius: 5%;
+            height: 550px;
+            width: 1200px;
+            overflow-y: auto;
+            text-align: center;
+            z-index: 1700;
+            padding-bottom: 50px;
+        }
+
+        button {
+
+            height: 30px;
+            width: 70px;
+            top: 690px;
+            position: fixed;
+            z-index: 1500;
+            background-color: rgb(207, 155, 77);
+        }
+
+        .title {
+
+            text-align: center;
+            color: white;
+        }
+
+        .p1 {
+
+            width: 100%;
+            height: auto;
+            color: white;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        .img1 {
+
+            height: 300px;
+            width: 350px;
+            margin: 50px;
+        }
+
+        .images1 {
+
+            justify-content: center;
+            background: transparent;
+            justify-content: space-between;
+
+        }
+
+        .imggg {
+
+            height: 250px;
+            width: 350px;
+            margin: 50px;
+        }
+
+
+        .imggg2 {
+
+            height: 270px;
+            width: 250px;
+        }
+
+        .btn {
+
+            width: 100%;
+            height: 100px;
+            background: transparent;
+            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .imgg{
+
+            height: 250px;
+            width: 270px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main2">
+
+            <div class="title hidden">
+                <h1>Greek Museum</h1>
+                <hr style="
+                    border: none;
+                    height: 1px;
+                    width: 80%;
+                    margin: 0px auto;
+                    background: linear-gradient(to right, transparent, white, transparent);
+                ">
+                <br><br>
+
+            </div>
+            <div class="p1 hidden">
+
+                <p>The Greco-Roman Museum is the oldest building in Egypt, specifically designed to preserve and display
+                    antiquities. It is the only museum specializing in displaying the antiquities and civilization of
+                    Egypt during the Greek and Roman eras.</p>
+
+            </div>
+
+            <br><br>
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.42.04 PM.jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+
+                <p>Since 1889, the Italian scholar Giuseppe Botti sought to establish a museum in Alexandria to house
+                    its collection of archaeological discoveries. He began in a modest rented property, which was
+                    inaugurated by Khedive Abbas Hilmi II on October 17, 1892. From its inception, the museum fostered a
+                    cultural revival, leading to an increase in discoveries and creating a pressing need for a new, more
+                    spacious building. On September 12, 1894, Nubar Pasha laid the foundation stone for a new museum
+                    designed by architects Dietrich and Steinon in a classical style. Khedive Abbas Hilmi II inaugurated
+                    it again on September 26, 1895. Several development projects for the museum have been undertaken. In
+                    1982, a new wing was added connecting the western and eastern wings. The current design for the
+                    museum building was finalized in 2015, and in 2018, work resumed with the addition of an upper
+                    floor.
+                </p>
+
+            </div>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place5photos\WhatsApp Image 2026-05-13 at 11.55.36 PM (1).jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+                <p>The museum's current collection comprises approximately 6,000 artifacts spanning from the
+                    pre-Alexander era to the Byzantine period.
+
+                    The museum building consists of a ground floor with 27 galleries, in addition to restoration
+                    laboratories and storage facilities.
+
+                    An upper floor houses four galleries: the Museum Education Hall, the Archives and Records Hall, the
+                    Gypsum Gallery, and the Study Hall. Another floor displays a number of artifacts in several
+                    galleries, organized by type. Examples of these include: the statue of Emperor Diocletian, a rare
+                    red statue representing the emperor who persecuted Christians, leading to his reign being known as
+                    the Age of Martyrs; and the Apis Bull statue, a stone statue displayed near the Crocodile Temple,
+                    depicting the god Osiris in the form of the Apis bull, with the sun disk and the sacred cobra
+                    between its horns. It was discovered in 1895 at the Serapeum by the archaeologist Botti, the
+                    museum's founder. The Queen Berenice Mosaic Panel
+                    With Protruding Eyes
+                    One of the museum's most unusual exhibits, this mosaic panel realistically depicts Queen Berenice,
+                    wife of Ptolemy II or III, with protruding eyes due to a thyroid condition. The panel was discovered
+                    in the Raml Station area, and its restoration and assembly took many months. The panel showcases the
+                    art of mosaic with its natural colors.
+
+                    The Isis Varia Statue
+                    The largest of the museum's submerged artifacts, this colossal statue of the goddess Isis was
+                    recovered from the Eastern Harbor in 1962 and is now displayed in the museum's inner courtyard,
+                    becoming a popular spot for taking souvenir photos.</p>
+            </div>
+
+            <br><br>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place5photos\WhatsApp Image 2026-05-13 at 11.55.35 PM.jpeg"
+                    class="imgg">
+
+                <img src="D:\vs code coding files\school project\photos\place5photos\WhatsApp Image 2026-05-13 at 11.55.36 PM.jpeg"
+                    class="imgg">
+
+                <img src="D:\vs code coding files\school project\photos\place5photos\WhatsApp Image 2026-05-13 at 11.55.36 PM (2).jpeg"
+                    class="imgg">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="btn">
+        <button id="button1" class="hidden">back</button>
+    </div>
+
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+
+        document.getElementById("button1").onclick = function () {
+
+            window.location.href = "index3.html"
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 170px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            overflow-x: hidden;
+
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0%;
+            z-index: 1000;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #img {
+            width: 270px;
+            height: 100px;
+            animation: ani1 2s ease-out forward;
+        }
+
+        @keyframes ani1 {
+
+            from {
+                opacity: 0;
+                transform: translateY(0px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(40px);
+            }
+        }
+
+        .menu {
+            width: 100%;
+            height: 2.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 111px;
+            z-index: 999;
+            padding: 15px 0;
+            /* keep this */
+            position: fixed;
+        }
+
+        .menu button {
+            padding-left: 30px;
+            padding-right: 30px;
+
+            font-size: 18px;
+            height: 40px;
+
+            background-color: transparent;
+            color: white;
+
+            border: none;
+            cursor: pointer;
+        }
+
+        .menubuttons {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 5px;
+        }
+
+        .menubuttons:hover {
+            text-decoration: underline;
+        }
+
+        #mainbtn {
+            text-decoration: underline;
+        }
+
+        .alignsection {
+
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .section1 {
+
+            width: 1350px;
+            height: 470px;
+            background-color: rgb(207, 155, 77);
+            top: 70%;
+            position: static;
+            padding: 90px;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-top: 80px;
+            justify-content: space-between;
+            padding-bottom: 0px;
+        }
+
+        .section2 {
+
+            width: 1350px;
+            height: 470px;
+            background-color: rgb(207, 155, 77);
+            top: 70%;
+            position: static;
+            padding: 300px;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-top: 80px;
+            justify-content: space-between;
+            padding-bottom: 0px;
+        }
+
+        /* 🔥 HR pinned INSIDE without affecting height */
+        .bottomhr {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            /* sticks to bottom edge */
+            width: 80%;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, white, transparent);
+            margin-bottom: 0%;
+            margin-top: 5px;
+        }
+
+        .sent1 {
+
+            width: 99%;
+            height: 20%;
+            padding: 30px;
+            padding-bottom: 0px;
+            box-sizing: border-box;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .box {
+
+            width: 300px;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 2px;
+            text-align: center;
+            transition: 0.5s ease 0.05s;
+            border-radius: 10%;
+
+
+        }
+
+        .box:hover {
+
+            transform: scale(1.5);
+
+        }
+
+
+
+        .readmorebtn {
+            background-color: black;
+            color: white;
+
+            border-radius: 10px;
+            /* 👈 added this */
+
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+
+            transition: 0.3s ease;
+        }
+
+        .box:hover .readmorebtn {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+
+
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        footer {
+
+            text-align: center;
+        }
+
+
+        .border {
+
+            border: 5px;
+            border-color: white;
+        }
+
+        .highlight {
+            background-color: transparent;
+            color: white;
+            border: 1px solid rgb(207, 155, 77);
+            padding: 30px;
+            display: inline-block;
+        }
+
+        .imgs{
+
+            height: 150px;
+            width: 200px;
+        }
+
+        .imgs2{
+
+            height: 200px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="D:\vs code coding files\school project\photos\iscovery__4_-removebg-preview.png" id="img">
+
+        <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        ">
+
+    </header>
+
+    <div class="menu">
+
+        <button class="menubuttons" id="mainbtn">Home</button>
+        <button class="menubuttons" id="vidbtn">videos</button>
+        <button class="menubuttons" id="gallerybtn">Gallery</button>
+        <button class="menubuttons" id="usbtn">us</button>
+
+        <hr class="bottomhr">
+
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+    <div class="sent1 hidden">
+        <div class="highlight">
+
+            <h1 style="font-family: Baskerville Old Face;">Discover with us</h1>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="alignsection">
+        <div class="section1 hidden">
+
+            <div class="box hidden">
+
+                <h3>Catacombs of Kom El Shoqafa</h3>
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.06 PM.jpeg" class="imgs hidden">
+<br><br>
+                <div class="readmorebtn"><button id="place1">read more</button></div>
+            </div>
+            <div class="box hidden">
+                <h3>Prophet Daniel Street</h3>
+                <img src="D:\vs code coding files\school project\photos\place2photos\WhatsApp Image 2026-05-13 at 11.58.47 PM.jpeg" class="imgs hidden">
+                <br><br>
+                <div class="readmorebtn"><button id="place2">read more</button></div>
+            </div>
+            <div class="box hidden">
+                <h3>Alexandria Opera House</h3>
+                 <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.26.51 PM.jpeg" class="imgs hidden">
+<br><br>
+                <div class="readmorebtn"><button id="place3">read more</button></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="alignsection">
+        <div class="section2 hidden">
+
+            <div class="box hidden">
+                <br>
+                <h3>Royal Jewelry Museum</h3>
+                
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.26.52 PM.jpeg" class="imgs hidden">
+                <br><br>
+                <div class="readmorebtn"><button id="place4">read more</button></div>
+            </div>
+            <div class="box hidden">
+                <h3>Greek Museum</h3>
+                                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.42.04 PM.jpeg" class="imgs hidden">
+<br><br>
+                <div class="readmorebtn"><button id="place5">read more</button></div>
+            </div>
+
+        </div>
+
+    </div>
+    <br><br>
+
+    <footer>
+        <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        ">
+        <h1>footer</h1>
+    </footer>
+
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+            });
+        });
+
+        sections.forEach(sec => observer.observe(sec));
+
+        document.getElementById("vidbtn").onclick = function () {
+            window.location.href = "indexvid.html"
+        }
+
+        document.getElementById("gallerybtn").onclick = function () {
+            window.location.href = "indexgallery.html"
+        }
+
+        document.getElementById("place1").onclick = function () {
+            window.location.href = "indexplace1.html"
+        }
+
+        document.getElementById("place2").onclick = function () {
+            window.location.href = "indexplace2.html"
+        }
+
+        document.getElementById("place3").onclick = function () {
+            window.location.href = "indexplace3.html"
+        }
+
+        document.getElementById("place4").onclick = function () {
+            window.location.href = "indexplace4.html"
+        }
+
+        document.getElementById("place5").onclick = function () {
+            window.location.href = "indexplace5.html"
+        }
+    </script>
+
+</body>
+
+</html>

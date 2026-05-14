@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            overflow: hidden;
+            background: black;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -100px;
+
+            background:
+
+                radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.7), transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(111, 111, 111, 0.7), transparent 40%),
+                radial-gradient(circle at 80% 20%, rgb(207, 155, 77), transparent 40%);
+
+            background-size: 200% 200%;
+
+            filter: blur(60px);
+
+            animation: liquidMove 10s ease infinite alternate;
+
+            z-index: -1;
+        }
+
+        @keyframes liquidMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 50% 100%;
+            }
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .main2 {
+
+            top: 70px;
+            position: relative;
+            background-color: black;
+            border-radius: 5%;
+            height: 550px;
+            width: 1200px;
+            overflow-y: auto;
+            text-align: center;
+            z-index: 1700;
+            padding-bottom: 50px;
+        }
+
+        button {
+
+            height: 30px;
+            width: 70px;
+            top: 690px;
+            position: fixed;
+            z-index: 1500;
+            background-color: rgb(207, 155, 77);
+        }
+
+        .title {
+
+            text-align: center;
+            color: white;
+        }
+
+        .p1 {
+
+            width: 100%;
+            height: auto;
+            color: white;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        .img1 {
+
+            height: 300px;
+            width: 350px;
+            margin: 50px;
+        }
+
+        .images1 {
+
+            justify-content: center;
+            background: transparent;
+            justify-content: space-between;
+
+        }
+
+        .imggg {
+
+            height: 250px;
+            width: 350px;
+            margin: 50px;
+        }
+
+
+        .imggg2 {
+
+            height: 270px;
+            width: 250px;
+        }
+
+        .btn {
+
+            width: 100%;
+            height: 100px;
+            background: transparent;
+            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .imggg5 {
+
+            height: 250px;
+            width: 280px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main2">
+
+            <div class="title hidden">
+                <h1>Royal Jewelry Museum</h1>
+                <hr style="
+                    border: none;
+                    height: 1px;
+                    width: 80%;
+                    margin: 0px auto;
+                    background: linear-gradient(to right, transparent, white, transparent);
+                ">
+                <br><br>
+
+            </div>
+            <div class="p1 hidden">
+
+                <p>The Royal Jewelry Museum is one of the most important museums in Alexandria, located in the Zizinia
+                    district. The museum houses a rare collection of jewelry and artifacts belonging to the Muhammad Ali
+                    dynasty, which ruled Egypt from the early 19th century until the 1952 revolution.</p>
+
+            </div>
+
+            <br><br>
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.02 AM.jpeg"
+                    class="img1">
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.02 AM (1).jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+
+                <p>The building was originally a royal palace built in 1919 for Princess Fatima al-Zahra, one of the
+                    princesses of the Alawite dynasty. It was later converted into a museum after the nationalization of
+                    the royal family's properties following the 1952 revolution, and was officially opened as a museum
+                    in 1986.
+                </p>
+
+            </div>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.03 AM.jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+                <p>The palace consists of two wings connected by a corridor, and features a luxurious European
+                    architectural style, particularly the Renaissance style. It also contains distinctive artistic
+                    decorations and stained glass windows, making it an architectural masterpiece as well as a museum.
+                </p>
+            </div>
+
+            <br><br>
+
+            <div class="p1 hidden">
+                <p>The museum houses a large number of rare artifacts, most notably: diamond-encrusted crowns,
+                    necklaces, luxury watches, medals, decorations, and personal items and utensils made of gold and
+                    silver belonging to the kings and princes of the dynasty.
+
+                    Among the most prominent exhibits are the belongings of King Farouk I, such as his gold cigarette
+                    case, pocket watch, and royal crown, as well as jewelry belonging to Queen Farida and Princess
+                    Fawzia. These items are displayed in glass cases distributed across several halls, each hall
+                    containing a collection of jewelry or personal belongings of a member of the royal family, while
+                    preserving the original palace layout and interior decorations.
+                </p>
+            </div>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.00 AM.jpeg"
+                    class="imggg">
+
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.03 AM (1).jpeg"
+                    class="imggg5">
+            </div>
+
+            <div class="p1 hidden">
+                <p>The museum's importance lies in the fact that it documents an important aspect of modern Egyptian
+                    history, showing the level of wealth and luxury in which the royal family lived, and reflecting the
+                    artistic taste in jewelry design during that period.</p>
+            </div>
+
+            <br><br>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\place4photos\WhatsApp Image 2026-05-14 at 12.00.01 AM (1).jpeg"
+                    class="imggg2">
+            </div>
+
+            <br><br>
+
+            <div class="p1 hidden">
+                <p>The Royal Jewelry Museum is one of the most prominent tourist attractions in Alexandria, combining
+                    historical, artistic, and architectural value, and giving visitors a clear picture of the life of
+                    the ruling class in Egypt before the establishment of the republican system.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="btn">
+        <button id="button1" class="hidden">back</button>
+    </div>
+
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+
+        document.getElementById("button1").onclick = function () {
+
+            window.location.href = "index3.html"
+
+        }
+    </script>
+</body>
+
+</html>

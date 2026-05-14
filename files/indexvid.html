@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+
+            margin: 0;
+            padding-top: 170px;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+
+        }
+
+        header {
+
+             width: 100%;
+            height: auto;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0%;
+            z-index: 1000;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 10px;
+
+        }
+
+        #img {
+
+            width: 270px;
+            height: 100px;
+
+
+        }
+
+        @keyframes ani1 {
+
+            from {
+
+                opacity: 0;
+                transform: translateY(40px);
+
+            }
+
+            to {
+
+                opacity: 1;
+                transform: translateY(0px);
+
+            }
+        }
+
+        .menu {
+
+            width: 100%;
+            height: 2.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 111px;
+            z-index: 999;
+            padding: 15px 0;
+            /* keep this */
+            position: fixed;
+
+        }
+
+        .menubuttons {
+
+            padding-left: 30px;
+            padding-right: 30px;
+
+            font-size: 18px;
+            height: 40px;
+
+            background-color: transparent;
+            color: white;
+
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .menubuttons:hover {
+
+            text-decoration: underline;
+
+        }
+
+        #vidbtn {
+
+            text-decoration: underline;
+
+        }
+
+        .bottomhr {
+
+            position: absolute;
+
+            left: 50%;
+            transform: translateX(-50%);
+
+            bottom: 0;
+
+            width: 80%;
+
+            border: none;
+            height: 1px;
+
+            background: linear-gradient(to right, transparent, white, transparent);
+
+            margin: 0;
+
+        }
+
+.sent1 {
+    width: 99%;
+            height: 20%;
+            padding: 30px;
+}
+
+
+        .section1 {
+
+            width: 99%;
+            height: 300px;
+            background: transparent;
+            border-radius: 40px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="D:\vs code coding files\school project\photos\iscovery__4_-removebg-preview.png" id="img">
+
+        <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0 auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        ">
+
+    </header>
+
+    <div class="menu">
+
+        <button class="menubuttons" id="mainbtn">Home</button>
+        <button class="menubuttons" id="vidbtn">videos</button>
+        <button class="menubuttons">Gallery</button>
+        <button class="menubuttons">us</button>
+
+        <hr class="bottomhr">
+
+    </div>
+
+    <div class="sent1">
+
+        <h1 style="font-family: Baskerville Old Face;">Our videos:</h1>
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="section1"></div>
+
+
+
+    <script>
+
+        document.getElementById("mainbtn").onclick = function () {
+
+            window.location.href = "index3.html"
+
+        }
+
+    </script>
+
+</body>
+
+</html>

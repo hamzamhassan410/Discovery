@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(white, white, white, white, rgb(157, 157, 157), black);   
+            text-align: center;
+            overflow: hidden;
+
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            padding-top: 40px;
+            /* controls how high everything sits */
+        }
+
+        /* welcome text */
+        #welcome {
+
+            font-size: 40px;
+            font-weight: bold;
+
+            animation: fadeup 0.5s ease-out forwards;
+        }
+
+        /* text animation */
+        @keyframes fadeup {
+
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1.2);
+            }
+        }
+
+        /* logo video */
+        #logoVideo {
+
+            width: 500px;
+
+            opacity: 0;
+
+            transition: 1s ease;
+
+            pointer-events: none;
+            /* prevents clicking on video */
+
+            outline: none;
+        }
+
+        #nextbtn{
+
+            width: 100px;
+            height: 50px;
+            border-radius: 20%;
+            border: 7px;
+            border-color: black;
+            background-color: #d29942;
+            color: rgb(0, 0, 0);
+            display: block;
+            margin: auto;
+            font-weight: bold;
+
+
+        }
+
+        #nextbtn:hover{
+
+            font-weight: bolder;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="welcome">EJS borg 1 presents:</h1>
+
+    <!-- no autoplay -->
+    <video id="logoVideo" muted playsinline>
+
+        <!-- put video in same folder as html -->
+        <source src="D:\vs code coding files\school project\photos\iscovery.mp4" type="video/mp4">
+
+    </video>
+
+    <button id="nextbtn">Next</button>
+
+    <script>
+
+        /* gets the video element */
+        const video = document.getElementById("logoVideo");
+
+        /* waits 3 seconds */
+        setTimeout(() => {
+
+            /* makes video visible */
+            video.style.opacity = "1";
+
+            /* starts video from beginning */
+            video.currentTime = 0;
+
+            /* plays the video */
+            video.play();
+
+        }, 1000);
+
+
+        document.getElementById("nextbtn").onclick = function(){
+
+            window.location.href = "index2.html"
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

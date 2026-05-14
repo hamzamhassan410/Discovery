@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            overflow: hidden;
+            background: black;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -100px;
+
+            background:
+
+                radial-gradient(circle at 20% 30%, rgba(0, 0, 0, 0.7), transparent 40%),
+                radial-gradient(circle at 50% 80%, rgba(111, 111, 111, 0.7), transparent 40%),
+                radial-gradient(circle at 80% 20%, rgb(207, 155, 77), transparent 40%);
+
+            background-size: 200% 200%;
+
+            filter: blur(60px);
+
+            animation: liquidMove 10s ease infinite alternate;
+
+            z-index: -1;
+        }
+
+        @keyframes liquidMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 50% 100%;
+            }
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .main2 {
+
+            top: 70px;
+            position: relative;
+            background-color: black;
+            border-radius: 5%;
+            height: 550px;
+            width: 1200px;
+            overflow-y: auto;
+            text-align: center;
+            z-index: 1700;
+            padding-bottom: 50px;
+        }
+
+        button {
+
+            height: 30px;
+            width: 70px;
+            top: 690px;
+            position: fixed;
+            z-index: 1500;
+            background-color: rgb(207, 155, 77);
+        }
+
+        .title {
+
+            text-align: center;
+            color: white;
+        }
+
+        .p1 {
+
+            width: 100%;
+            height: auto;
+            color: white;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+
+        .img1 {
+
+            height: 300px;
+            width: 350px;
+            margin: 50px;
+        }
+
+        .images1 {
+
+            justify-content: center;
+            background: transparent;
+            justify-content: space-between;
+
+        }
+
+        .imggg {
+
+            height: 250px;
+            width: 350px;
+            margin: 50px;
+        }
+
+
+        .imggg2 {
+
+            height: 270px;
+            width: 250px;
+        }
+
+        .btn {
+
+            width: 100%;
+            height: 100px;
+            background: transparent;
+            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main2">
+
+            <div class="title hidden">
+                <h1>Catacombs of Kom El Shoqafa</h1>
+                <hr style="
+                    border: none;
+                    height: 1px;
+                    width: 80%;
+                    margin: 0px auto;
+                    background: linear-gradient(to right, transparent, white, transparent);
+                ">
+                <br><br>
+
+            </div>
+            <div class="p1 hidden">
+
+                <p>It is one of the most important archaeological sites in the city of Alexandria, located in the
+                    Karmouz district. It consists of underground tombs dating back to the Roman era, specifically to the
+                    second century AD, and was used for several centuries as a burial place.</p>
+
+            </div>
+
+            <br><br>
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.07 PM.jpeg"
+                    class="img1">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.07 PM (1).jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+
+                <p>The Kom El Shoqafa catacombs were named so because of the large quantities of pottery shards found at
+                    the site. In ancient times, visitors would bring food and drink when visiting the dead, then break
+                    the vessels after use and leave them there. These shards accumulated and formed a mound-like shape.
+                </p>
+
+            </div>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.06 PM (1).jpeg"
+                    class="img1">
+            </div>
+
+            <div class="p1 hidden">
+                <p>The tombs were discovered by chance in 1901 AD when a donkey fell into a hole in the ground,
+                    revealing
+                    the entrance. Since then, they have become one of the most prominent tourist and archaeological
+                    sites in
+                    Egypt, and were also classified as one of the wonders of the medieval world.</p>
+            </div>
+
+            <br><br>
+
+            <div class="p1 hidden">
+                <p>The tombs consist of three levels carved into the rock, reaching a depth of approximately 30 meters
+                    below ground level. Part of the lower level is submerged. A circular entrance leads into the tombs,
+                    followed by a spiral staircase that was used to lower the bodies.
+
+                    The tombs feature a complex architectural design comprising several main sections, including a
+                    circular hall known as the rotunda, a dining hall used for funerary feasts, the main burial chamber
+                    containing sarcophagi and sculptures, and another hall containing human and animal skeletal remains.
+                </p>
+            </div>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.07 PM (2).jpeg"
+                    class="imggg">
+
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.06 PM.jpeg"
+                    class="imggg">
+            </div>
+
+            <div class="p1 hidden">
+                <p>The most distinctive feature of the Kom El Shoqafa catacombs is their unique artistic style, which
+                    blends ancient Egyptian, Greek, and Roman civilizations. The inscriptions and statues showcase a
+                    fusion of Pharaonic symbols with Roman and Greek artistic styles, reflecting Alexandria's diverse
+                    cultural center during that era.</p>
+            </div>
+
+            <br><br>
+
+            <div class="images1 hidden">
+                <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-13 at 10.47.05 PM.jpeg"
+                    class="imggg2">
+            </div>
+
+            <br><br>
+
+            <div class="p1 hidden">
+                <p>Initially, the cemeteries were designated for a single family from the wealthy class, but they later
+                    became mass graves for a large number of people and were also used for religious rites and memorial
+                    ceremonies for the dead.</p>
+            </div>
+<br><br>
+            <div class="p1 hidden">
+                <p>These tombs are of great importance because they represent a late stage in the development of burial
+                    arts in Egypt, demonstrate the cultural interaction between different civilizations, and provide a
+                    clear idea of ​​the customs and traditions of society in Roman-era Alexandria.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="btn">
+        <button id="button1" class="hidden">back</button>
+    </div>
+
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+
+        document.getElementById("button1").onclick = function () {
+
+            window.location.href = "index3.html"
+
+        }
+    </script>
+</body>
+
+</html>

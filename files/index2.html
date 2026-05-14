@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+
+    <style>
+        body {
+
+            margin: 0;
+            padding-top: 80px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-size: small;
+        }
+
+        header {
+
+            width: 100%;
+            height: 87px;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0%;
+            z-index: 1000;
+            color: rgb(255, 255, 255);
+            text-align: center;
+
+        }
+
+        .introduction {
+
+            animation: introductionword 2s ease-out forward;
+
+        }
+
+        @keyframes introductionword {
+
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1.2);
+
+            }
+        }
+
+        .section1 {
+
+            width: 90%;
+            height: 500px;
+            color: white;
+            background: black;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+
+        .section2 {
+
+            width: 90%;
+            height: 500px;
+            color: white;
+            background: black;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+
+        #img1 {
+
+            width: 500px;
+            height: 350px;
+            margin: 20px;
+        }
+
+        /* ===== SCROLL ANIMATION ADDED ===== */
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #nextbtn {
+
+            width: 100px;
+            height: 50px;
+            border-radius: 20%;
+            border: 7px;
+            border-color: black;
+            background-color: #d29942;
+            color: rgb(0, 0, 0);
+            display: block;
+            margin: auto;
+            font-weight: bold;
+
+
+        }
+
+        #nextbtn:hover {
+
+            font-weight: bolder;
+            background-color: black;
+            color: white;
+        }
+
+        .pp {
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="introduction">
+            <h1>Introduction</h1>
+        </div>
+
+        <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        ">
+    </header>
+
+    <br><br><br>
+
+    <div class="section1 hidden">
+        <h2>We are second-year middle school students at the Egyptian-Japanese School, Borg El Arab 1, and we are
+            pleased to present our Citizenship Project for the second term. In this project, we showcase what we have
+            learned this semester in the Tokkatsu course, "Building a Citizenship Community."</h2>
+        <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-07 at 9.04.07 PM.jpeg" id="img1">
+    </div>
+
+    <br><br>
+    <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        " class="hidden">
+    <br><br>
+
+    <div class="pp hidden">
+        <h2>First, we would like to explain that "Building a Citizenship Community" is a new course that we began
+            studying
+            in the first year of middle school. It aims to teach us how to be good citizens, capable of serving our
+            community and the environment in which we live, and contributing positively to the development of our
+            country.
+            Throughout our studies in this course, we have participated in numerous activities that have helped us
+            understand the meaning of citizenship practically, not just theoretically.</h2>
+    </div>
+    <br><br>
+    <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        " class="hidden">
+    <br><br>
+    <div class="section2 hidden">
+        <img src="D:\vs code coding files\school project\photos\WhatsApp Image 2026-05-07 at 9.04.07 PM.jpeg" id="img1">
+        <br><br><br>
+        <h3>Our project this year focuses on "Heritage and Cultural Sites in Alexandria Governorate." We researched and
+            investigated some of the most important and famous landmarks in our governorate. We worked as a team in
+            class, exchanging information and discussing our findings from various sources. This helped us expand our
+            knowledge and enrich our understanding of our city's history and culture.</h3>
+    </div>
+
+    <br><br>
+    <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        " class="hidden">
+    <br><br>
+
+    <div class="pp hidden">
+        <h2>It wasn't just about research; some of us also conducted field visits to these heritage and cultural sites,
+            taking authentic photographs that capture their beauty and historical significance. These photos will be
+            featured on our website. This experience allowed us to see the places we had only read about in person,
+            deepening our understanding and connection to them.</h2>
+    </div>
+    <br><br>
+    <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        " class="hidden">
+    <br><br>
+
+
+    <br><br>
+    
+
+    <div class="pp hidden">
+        <h2>After gathering all this information and experience, we discussed as a team the best way to present this
+            content to the community, ensuring we could communicate what we had learned in an organized and effective
+            manner. Ultimately, we agreed to create this website as a platform to compile all the information, photos,
+            and ideas we had gathered. It serves as a simple reference that reflects our collective efforts and
+            highlights the importance of Alexandria's heritage and cultural sites.</h2>
+    </div>
+
+    <hr style="
+        border: none;
+        height: 1px;
+        width: 80%;
+        margin: 0px auto;
+        background: linear-gradient(to right, transparent, white, transparent);
+        " class="hidden">
+    <br><br>
+
+
+    <button id="nextbtn">Next</button>
+
+    <!-- SCROLL MAGIC SCRIPT -->
+    <script>
+
+        const sections = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+            });
+        });
+
+        sections.forEach(sec => observer.observe(sec));
+
+
+        document.getElementById("nextbtn").onclick = function () {
+
+            window.location.href = "index3.html"
+        }
+    </script>
+
+</body>
+
+</html>

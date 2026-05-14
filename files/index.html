@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EJS BORG 1 DISCOVERIES</title>
+
+        <style>
+
+            body{
+
+                margin: 0%;
+                padding-top: 10%;
+                background: #111;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                overflow-x: hidden;
+               }
+
+            header{
+
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                background-color: rgb(255, 255, 255);
+                position: fixed;
+                top: 0%;
+                z-index: 1000;
+                color: black;
+            }
+
+            .firstpart{
+
+                justify-content: center;
+                justify-content: space-between;
+                display: flex;
+            }
+
+            .boxs{
+
+                width: 100px;
+                height: 100px;
+                background-color: rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                padding: 2px;
+                text-align: center;
+                transition: 0.5s ease 0.05s;
+                border-radius: 10%;
+
+                
+            }
+
+            .boxs:hover{
+
+                transform: scale(1.5);
+                
+            }
+
+            .menu{
+
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                background-color: red;
+                position: fixed;
+                top: 80px;
+                z-index: 1000;
+            }
+
+            .line {
+
+                position: absolute;
+                left: 47.7%;
+                right: 49%;
+                width: 15px;
+                height: 130%;
+                margin-left: 30px;
+                margin-right: 30px;
+                background-color: rgb(207, 155, 77);
+                border-radius: 50%;
+                top: 70%;
+            }
+
+            .rightcircul{
+
+                position: absolute;
+                top: 1000px;
+                right: 35%;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: black;
+                transition: 0.5s ease 0.05s;
+            }
+            .rightcircul:hover{
+
+                transform: scale(1.2);
+            }
+
+
+            .leftcircul{
+
+                position: absolute;
+                top: 800px;
+                left: 35%;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: black;
+                transition: 0.5s ease 0.05s;
+            }
+            .leftcircul:hover{
+                transform: scale(1.2);
+             }
+
+            #welcome{
+
+                text-align: center;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                z-index: 500;
+                font-size: 50px;
+                animation: fadeup 1s ease-out forwards;
+
+            }
+
+            #presents{
+
+                transition: 0.5s ease 0.05s;
+            }
+
+            #presents:hover{
+                transform: scale(1.2);
+            }
+
+
+            @keyframes fadeup{
+
+                from{
+
+                    opacity: 0;
+                    transform: translateY(40px);
+
+                }
+                to{
+
+                    opacity: 1;
+                    transform: translateY(0) scale(1.2);
+                }
+            }
+
+                #logoVideo{
+                     width:300px;
+      /* removes weird blue highlight on click */
+                     outline:none;
+                }
+                
+                .places{
+
+                    width: 99%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: left;
+                    justify-content: space-between;
+                    background: transparent;
+                    padding: 50px;
+                    
+                }
+
+                .spot{
+
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 20%;
+                }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Title</h1>
+        </header>
+        <div class="menu">
+            <button>Home</button>
+        </div>
+
+
+        <h1 id="welcome">EJS borg 1 presents:</h1>
+        <p id="presents"></p>
+        <div class="line"></div>
+        <button class="leftcircul"></button>
+        <button class="rightcircul"></button>
+
+        <div class="boxs firstpart">
+            <h3>gthydisko</h3>
+        </div>
+
+        
+    </body>
+</html>
